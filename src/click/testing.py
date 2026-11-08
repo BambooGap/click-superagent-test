@@ -775,7 +775,7 @@ class CliRunner:
             stdout_bytes=stdout,
             stderr_bytes=stderr,
             output_bytes=output,
-            return_value=return_value,
+            return_value=return_value or None,
             exit_code=exit_code,
             exception=exception,
             exc_info=exc_info,  # type: ignore
